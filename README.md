@@ -1,6 +1,6 @@
 # BSE 405 ML Project — Satellite Soil Moisture Calibration
 
-**Team:** Ronak Bhale, John Brooks, Elyzabeth Benitez Rivera, Max
+**Team:** Ronak Bhale, John Brooks, Elyzabeth Benitez Rivera, Max Rader
 
 ## Project Overview
 
