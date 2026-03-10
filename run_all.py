@@ -193,8 +193,8 @@ def run_feature_engineering(df, data_dir):
     lon_min, lon_max = df['longitude'].min(), df['longitude'].max()
     lat_bins = np.linspace(lat_min, lat_max + 0.01, 3)
     lon_bins = np.linspace(lon_min, lon_max + 0.01, 4)
-    df['lat_band'] = pd.cut(df['latitude'], bins=lat_bins, labels=['S', 'N'])
-    df['lon_band'] = pd.cut(df['longitude'], bins=lon_bins, labels=['W', 'C', 'E'])
+    df['lat_band'] = pd.cut(df['latitude'], bins=lat_bins, labels=['S', 'N'], include_lowest=True)
+    df['lon_band'] = pd.cut(df['longitude'], bins=lon_bins, labels=['W', 'C', 'E'], include_lowest=True)
     df['spatial_block'] = df['lat_band'].astype(str) + '_' + df['lon_band'].astype(str)
     print(f"\nSpatial block counts:\n{df['spatial_block'].value_counts()}")
 
