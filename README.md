@@ -24,12 +24,12 @@ Predicting AMSR satellite soil moisture (`sm_tgt`) from SMOS-ASCAT satellite dat
 
 Run these sequentially — each one depends on the output of the previous.
 
-| # | Notebook | What it does | Outputs |
-|---|----------|-------------|---------|
-| 1 | `01_EDA.ipynb` | Explores the dataset — summary stats, distributions, correlation heatmap, spatial map, temporal coverage | Figures saved to `figures/` |
-| 2 | `02_feature_engineering.ipynb` | Creates new features (day_of_year, season, soil ratios, interaction terms) and spatial split labels | `data/processed_data.csv` |
-| 3 | `03_modeling.ipynb` | Trains 4 models across 3 split strategies, evaluates with RMSE/R2/bias | `results/model_results.csv`, `results/predictions_spatial.csv`, `results/feature_importance.csv` |
-| 4 | `04_analysis.ipynb` | Produces final visualizations — model comparison, overfitting analysis, error maps, feature importance | Figures saved to `figures/` |
+| # | Notebook | Owner | What it does | Outputs |
+|---|----------|-------|-------------|---------|
+| 1 | `01_EDA.ipynb` | Ronak Bhale | Explores the dataset — summary stats, distributions, correlation heatmap, spatial map, temporal coverage | Figures saved to `figures/` |
+| 2 | `02_feature_engineering.ipynb` | John Brooks | Creates new features (day_of_year, season, soil ratios, interaction terms) and spatial split labels | `data/processed_data.csv` |
+| 3 | `03_modeling.ipynb` | Elyzabeth Benitez Rivera | Trains 4 models across 3 split strategies, evaluates with RMSE/R2/bias | `results/model_results.csv`, `results/predictions_spatial.csv`, `results/feature_importance.csv` |
+| 4 | `04_analysis.ipynb` | Max Rader | Produces final visualizations — model comparison, overfitting analysis, error maps, feature importance | Figures saved to `figures/` |
 
 ## Models
 
